@@ -34,7 +34,28 @@ const leerTodo = (nombreArchivo) => {
     // console.log(arregloClientes);
     return arregloClientes;
 }
-leerTodo('customers');
- 
+//leerTodo('customers');
 
+const leerPorId = (id, nombreArchivo) => {
+
+}
+
+const insertar = (cliente) =>{
+
+}
+
+const actualizar = (cliente) => {
+
+}
+
+const eliminar = (id) => {
+
+}
+
+
+
+//lo mando al index con:
+module.exports = {
+    leerTodo
+}
 

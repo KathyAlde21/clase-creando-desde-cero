@@ -19,3 +19,19 @@ console.log(clienteUno);*/
 
 /* ------------- */
 
+//llamando Services.js
+/*const { leerTodo } = require('./services/clientesService');
+console.log(leerTodo('customers'));*/
+
+/*const { leerTodo } = require('./services/empleadosService');
+console.log(leerTodo('employees'));*/
+
+/*const { leerTodo } = require('./services/detalleDeOrdenService');
+console.log(leerTodo('orderDetails'));*/
+
+/*const { leerTodo } = require('./services/productosService');
+console.log(leerTodo('products'));*/
+
+/*const { leerTodo } = require('./services/ordenesService');
+console.log(leerTodo('orders'));*/
+
