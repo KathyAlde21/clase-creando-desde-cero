@@ -1,5 +1,5 @@
 //desde acá llamo a clientes.js que a su vez llama a customers.csv
-const fs = require('fs');
+const fs = require('fs'); //llamando a un modulo de node
 const Cliente = require('../models/clientes'); //.. para subir un nivel
 
 //Estructura de lectura de datos
