@@ -40,36 +40,19 @@ console.log(leerTodo('orders'));*/
 /* validando que npm express funcione (npmjs.com/package/express)
 voy a página oficial, luego copio - pego y edito */
 const express = require('express');
-const app = express(); //en base a esto veo el recurso estático
+const app = express();
 
-//usando recurso estático con clientes
-app.use(express.static('public'))
-
-//ahora creo una ruta por cada página que quiera levantar
-/*
-//una vez que las cree en public ya no las necesito
-app.get('/clientes', (req, res) => { //puedo replicar la ruta /clientes creando una carpeta con ese nombre
-    res.send('clientes.html'); //la muevo a la carpeta clientes
+app.get('/clientes', (req, res) => {
+    res.send('clientes.html');
 });
 
 app.get('/empleados', (req, res) => {
     res.send('empleados');
 });
-*/
-//la creo en la raíz para que no sea estática
-/*app.get('/error', (req, res) => {
-    res.sendFile(__dirname + '/error.html'); //por eso dice sendFile
-});*/
-//para que salga siempre que se escriba algo mal o que no exista
-app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/error.html'); //por eso dice sendFile
-});
-
 
 app.get('/detalleDeOrden', (req, res) => {
     res.send('detalle de orden');
 });
-
 
 app.get('/ordenes', (req, res) => {
     res.send('ordenes');
